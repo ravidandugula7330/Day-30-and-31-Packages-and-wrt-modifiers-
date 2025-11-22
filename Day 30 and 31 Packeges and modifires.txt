@@ -1,0 +1,61 @@
+Day-31
+
+21/11/2025
+
+Packages:
+
+classes and interfaces in single is called packages.
+
+java.lang.package :
+
+this package is automatically imported into all java programs.
+it contains fundamentals classes like Object, String, Integer, Boolean ...etc, provides basic language support such as Exceptions, Threads and the core classes of java.
+
+For writing any java program that most commonly required classes and interfaces are encapsulated in the separate package which is nothing but java.lang.package.
+ 
+it is not required to import java.lang package in our program because it is available by default to every java program.
+
+What is favourite package? Why java.lang package is your favourite package.
+
+It is not required to import java lang package explicitly but remaining packages we have to import.
+
+Data And Time API (Joda-Time-API)
+
+until java 1.7 version the classes present in java.util package to handle Date and Time (like Date, Calender, TimeZone...etc) are not upto the mark with respect to convince and performance. 
+
+To overcome this problem in the 1.8 version oracle people introduced Joda-Time-API. this API was developed by joda.org and available in the form of java.time package.
+
+
+import java.util.ArrayList;            =
+                                         import java.util.*;
+import java.util.Scanner;              =
+
+
+modifiers w.r.t the packages:
+
+1.	default package
+
+What is it?
+
+when no accesses modifier is specified the class, method or field has default accesses.
+accessible only within the same package.
+not accessible from classes in another packages.
+
+
+Public Accesses:
+
+when a class or method or field is declared public it is accessible from anywhere, regardless of the package.
+
+Private Accesses:
+
+Private members are accessible only within the same class.
+not accessible from any other class, not even subclasses or classes in the same package.
+
+
+
+Protected :
+
+Protected members are accessible.
+
+1.	with in the same package just like default accesses.
+2.	in subclass even if they are different packages.
